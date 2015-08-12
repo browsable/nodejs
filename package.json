@@ -1,0 +1,11 @@
+{
+  "name": "BookSearch",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser" : "*",
+    "mysql" : "*",
+    "express" : "*",
+    "generic-pool" : "*",
+    "ejs" : "*"
+  }
+}
