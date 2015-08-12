@@ -22,5 +22,5 @@
     app.use("/",routes);
 
     // 5. 서버 생성 후 기동
-    http.createServer(app).listen(5000,"localhost");
-    console.log("서버기동 - 5000");
+    http.createServer(app).listen(8001);
+    console.log("서버기동 - 8001");
