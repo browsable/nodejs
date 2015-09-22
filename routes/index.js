@@ -20,8 +20,8 @@
         controller.listSearch(req,res,name);
     });
     router.post('/check', function(req, res){
-        var name = req.body.name;
-        var phone = req.body.phone;
+        var name = req.params.name;
+        var phone = req.params.phone;
         console.log("name : "+name + " , phone : "+phone);
         /*var chunk = '';
         //데이터를 가져옵니다.
