@@ -36,6 +36,7 @@
         // 아래의 OK라는 내용이 안드로이드의 ReadBuffer를 통해
         // result String으로 바뀝니다.*/
         //res.write("OK");
+        res.write("<h1>OK</h1>");
         res.end();
     });
     module.exports = router;
