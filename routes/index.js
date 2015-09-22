@@ -20,9 +20,11 @@
         controller.listSearch(req,res,name);
     });
     router.post('/check', function(req, res){
-        var name = req.params.name;
+        var name = req.body.name;
         var phone = req.params.phone;
-        console.log("name : "+name + " , phone : "+phone);
+        console.log("test");
+        console.log("name : "+name);
+        console.log("phone : "+phone);
         /*var chunk = '';
         //데이터를 가져옵니다.
         req.on('data', function(data){
