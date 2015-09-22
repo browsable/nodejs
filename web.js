@@ -18,9 +18,11 @@
 
     // 4. express setting
     app.use(express.static(path.join(__dirname,"public")));
-    app.use(bodyParser());
-    app.use("/",routes);
-
+    app.use(bodyParser.urlencoded({
+        extended: true
+    }));
+    app.use(bodyParser.json());
+        app.use("/",routes);
     // 5. 서버 생성 후 기동
     http.createServer(app).listen(8001);
     console.log("서버기동 - 8001");
