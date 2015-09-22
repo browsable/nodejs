@@ -20,7 +20,7 @@
         controller.listSearch(req,res,name);
     });
     router.post('/check', function(req, res){
-        var chunk = '';
+        /*var chunk = '';
         //데이터를 가져옵니다.
         req.on('data', function(data){
         //데이터를 JSON으로 파싱합니다.
@@ -31,7 +31,7 @@
             console.log("name : "+chunk.name + " , phone : "+chunk.phone);
         });
         // 아래의 OK라는 내용이 안드로이드의 ReadBuffer를 통해
-        // result String으로 바뀝니다.
+        // result String으로 바뀝니다.*/
         res.write("OK");
         res.end();
     });
