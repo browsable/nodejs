@@ -19,9 +19,9 @@
         var name = req.body.keyword;
         controller.listSearch(req,res,name);
     });
-    router.get('/check', function(req, res){
+    router.post('/check', function(req, res){
         var name = req.body.name;
-        var phone = req.params.phone;
+        var phone = req.body.phone;
         console.log("test");
         console.log("name : "+name);
         console.log("phone : "+phone);
